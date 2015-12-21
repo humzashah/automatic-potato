@@ -1,0 +1,5 @@
+language: 'ruby'
+rvm: '2.2.3'
+env: 'RAKE_ENV=test'
+before_install: 'gem install bundler -v 1.11.1'
+script: 'bundle exec ruby tests/**.rb'
