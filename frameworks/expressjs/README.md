@@ -1,4 +1,4 @@
-## [Sinatra](https://github.com/sinatra/sinatra)
+## [ExpressJS](http://expressjs.com/)
 
 ### Usage
 
@@ -6,17 +6,15 @@ Clone the repo. `cd` into the folder where this `README.md` lives.
 
 Install depdendencies:
 
-    bundle install --without test
+    npm install --production
 
 Run the following to start your server:
 
-    rackup
+    npm start
 
 Visit `http://localhost:3000/auto-potate` to automatically reap a potato!
 
 ### Tests
 
-Run the following from the same folder:
-
-    bundle install
-    ruby tests/**/*.rb
+    npm install --only=dev
+    npm test
