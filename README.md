@@ -31,3 +31,7 @@ GitHub suggested the following repository name:
 ![github-suggestion](https://raw.githubusercontent.com/humzashah/automatic-potato/master/docs/images/github-suggestion.png)
 
 The rest is history.
+
+## Contributing
+
+Feel free to open issues but this project will not be accepting pull requests.
