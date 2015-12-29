@@ -1,0 +1,29 @@
+{
+  "name": "automatic-potato-expressjs",
+  "description": "Automatically fetch a fine potato!",
+  "version": "1.0.0",
+  "main": "app.js",
+  "author": "Syed Humza Shah <humzashah@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/humzashah/automatic-potato"
+  },
+  "keywords": [
+    "AutomaticPotato",
+    "ExpressJS"
+  ],
+  "dependencies": {
+    "express": "4.13.3"
+  },
+  "devDependencies": {
+    "expect.js": "0.3.1",
+    "mocha": "2.3.4",
+    "npm": "3.3.12",
+    "superagent": "1.6.1"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "mocha test.js"
+  }
+}

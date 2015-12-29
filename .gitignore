@@ -1,6 +1,7 @@
 *.swp
 *.swo
 .DS_Store
+*.log
 
-frameworks/sinatra/Gemfile.lock
-frameworks/expressjs/node_modules
+frameworks/**/Gemfile.lock
+frameworks/**/node_modules

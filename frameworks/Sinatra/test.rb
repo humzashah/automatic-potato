@@ -1,5 +1,5 @@
 ENV['RACK_ENV'] ||= 'test'
-require_relative '../app'
+require_relative './app'
 
 class AppTest < Test::Unit::TestCase
   include Rack::Test::Methods

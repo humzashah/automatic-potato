@@ -1,16 +1,23 @@
 install:
   - "echo 'Sinatra setup'"
-  - "cd frameworks/sinatra"
+  - "cd frameworks/Sinatra"
   - "rvm use $(more .ruby-version) --install --binary --fuzzy"
   - "gem install bundler -v 1.11.1"
   - "bundle install --jobs 3 --quiet"
   - "cd ../.."
 
   - "echo 'ExpressJS setup'"
-  - "cd frameworks/expressjs"
+  - "cd frameworks/ExpressJS"
+  - "nvm install $(more .nvmrc) && nvm use $(more .nvmrc)"
+  - "npm install"
+  - "cd ../.."
+
+  - "echo 'HapiJS setup'"
+  - "cd frameworks/HapiJS"
   - "nvm install $(more .nvmrc) && nvm use $(more .nvmrc)"
   - "npm install"
   - "cd ../.."
 script:
-  - "cd frameworks/sinatra && ruby tests/app_test.rb && cd ../.."
-  - "cd frameworks/expressjs && npm test && cd ../.."
+  - "cd frameworks/Sinatra && ruby test.rb && cd ../.."
+  - "cd frameworks/ExpressJS && npm test && cd ../.."
+  - "cd frameworks/HapiJS && npm test && cd ../.."

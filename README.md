@@ -34,4 +34,4 @@ The rest is history.
 
 ## Contributing
 
-Feel free to open issues but this project will not be accepting pull requests.
+Feel free to open issues but since this is a personal project, I will not be accepting pull requests.

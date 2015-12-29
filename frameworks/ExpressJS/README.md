@@ -16,5 +16,9 @@ Visit `http://localhost:3000/auto-potate` to automatically reap a potato!
 
 ### Tests
 
-    npm install --only=dev
+Suite: [Mocha](https://mochajs.org/)
+
+Run the following from the framework's folder:
+
+    npm install
     npm test
