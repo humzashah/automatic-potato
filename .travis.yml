@@ -1,23 +1,30 @@
 install:
   - "echo 'Sinatra setup'"
-  - "cd frameworks/Sinatra"
-  - "rvm use $(more .ruby-version) --install --binary --fuzzy"
-  - "gem install bundler -v 1.11.1"
-  - "bundle install --jobs 3 --quiet"
-  - "cd ../.."
+  - 'cd frameworks/Sinatra'
+  - 'rvm use $(more .ruby-version) --install --binary --fuzzy'
+  - 'gem install bundler -v 1.11.1'
+  - 'bundle install --jobs 3 --quiet'
+  - 'cd ../..'
 
   - "echo 'ExpressJS setup'"
-  - "cd frameworks/ExpressJS"
-  - "nvm install $(more .nvmrc) && nvm use $(more .nvmrc)"
-  - "npm install"
-  - "cd ../.."
+  - 'cd frameworks/ExpressJS'
+  - 'nvm install $(more .nvmrc) && nvm use $(more .nvmrc)'
+  - 'npm install'
+  - 'cd ../..'
 
   - "echo 'HapiJS setup'"
-  - "cd frameworks/HapiJS"
-  - "nvm install $(more .nvmrc) && nvm use $(more .nvmrc)"
-  - "npm install"
-  - "cd ../.."
+  - 'cd frameworks/HapiJS'
+  - 'nvm install $(more .nvmrc) && nvm use $(more .nvmrc)'
+  - 'npm install'
+  - 'cd ../..'
+
+  - "echo 'Flask setup'"
+  - 'sudo pip install Flask'
+  - 'cd frameworks/HapiJS'
+  - 'cd ../..'
+
 script:
-  - "cd frameworks/Sinatra && ruby test.rb && cd ../.."
-  - "cd frameworks/ExpressJS && npm test && cd ../.."
-  - "cd frameworks/HapiJS && npm test && cd ../.."
+  - 'cd frameworks/Sinatra && ruby test.rb && cd ../..'
+  - 'cd frameworks/ExpressJS && npm test && cd ../..'
+  - 'cd frameworks/HapiJS && npm test && cd ../..'
+  - 'cd frameworks/Flask && python test_app.py && cd ../..'

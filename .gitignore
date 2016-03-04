@@ -5,3 +5,4 @@
 
 frameworks/**/Gemfile.lock
 frameworks/**/node_modules
+frameworks/**/*.pyc
