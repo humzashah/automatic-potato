@@ -3,7 +3,7 @@ install:
   - 'cd frameworks/Sinatra'
   - 'rvm use $(more .ruby-version) --install --binary --fuzzy'
   - 'gem install bundler -v 1.11.1'
-  - 'bundle install --jobs 3 --quiet'
+  - 'bundle install --jobs 4 --quiet'
   - 'cd ../..'
 
   - "echo 'ExpressJS setup'"
@@ -19,8 +19,8 @@ install:
   - 'cd ../..'
 
   - "echo 'Flask setup'"
-  - 'sudo pip install Flask'
-  - 'cd frameworks/HapiJS'
+  - 'cd frameworks/Flask'
+  - 'sudo pip install Flask'  
   - 'cd ../..'
 
 script:
