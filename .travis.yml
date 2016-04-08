@@ -28,3 +28,8 @@ script:
   - 'cd frameworks/ExpressJS && npm test && cd ../..'
   - 'cd frameworks/HapiJS && npm test && cd ../..'
   - 'cd frameworks/Flask && python test_app.py && cd ../..'
+
+notifications:
+  email:
+    on_success: never
+    on_failure: always
